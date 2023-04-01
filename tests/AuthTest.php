@@ -1,6 +1,7 @@
 <?php
 namespace Hakaczu\Przelewy24PhpSdk;
 use PHPUnit\Framework\TestCase;
+include './config/env.php';
 final class AuthTest extends TestCase {
 
     public function testClassConstructor(){
