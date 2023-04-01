@@ -2,5 +2,6 @@ vendor
 composer.lock
 przelewy24.php
 config/configDev.php
+config/configProd.php
 config/.env
 initPHP5.php

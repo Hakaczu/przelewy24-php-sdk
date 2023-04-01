@@ -1,7 +1,7 @@
 <?php
 namespace Hakaczu\Przelewy24PhpSdk;
 class Transaction {
-    public $mechantId = null;
+    public $merchantId = null;
     public $posId = null;
     public $sessionId = null;
     public $amount = null;
@@ -11,10 +11,10 @@ class Transaction {
     public $country = 'PL';
     public $language = 'pl';
 
-    public function __construct($mechantId, $posId, $sessionId) {
-        $this->mechantId = $mechantId;
+    public function __construct($merchantId, $posId, $sessionId) {
+        $this->merchantId = $merchantId;
         $this->posId = $posId;
-        $this->$sessionId=$sessionId;
+        $this->sessionId = $sessionId;
     }
 
 
