@@ -4,4 +4,4 @@ przelewy24.php
 config
 tests/.env
 tests/env.php
-init.php
+initPHP5.php
