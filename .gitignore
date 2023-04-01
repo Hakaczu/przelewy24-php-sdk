@@ -1,0 +1,6 @@
+vendor
+composer.lock
+przelewy24.php
+config
+tests
+init.php

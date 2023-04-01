@@ -1,0 +1,21 @@
+{
+    "name": "hakaczu/przelewy24-php-sdk",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "description": "Biblioteka do obsługi API przelewy24.pl",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hakaczu\\Przelewy24PhpSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sebastian Szypulski",
+            "email": "sszypulski.kess@gmail.com"
+        }
+    ],
+    "require": {}
+}
