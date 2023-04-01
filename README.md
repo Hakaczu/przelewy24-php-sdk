@@ -1,2 +1,2 @@
-# przelewy24-php-sdk
+# Przelewy24 PHP SDK
 Biblioteka do obsługi API Przelewy24.pl
