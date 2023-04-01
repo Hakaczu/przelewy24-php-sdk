@@ -5,11 +5,13 @@ class TransactionRegister extends Auth {
     public $crc;
 
     private function generateSign($sessionId, $amount, $currency){
-        $signToHash = '{' . $sessionId . ',' . 
-        $this->username . ',' . 
-        $amount . ',' . 
-        $currency . ',' .
-        $this->crc . '}';
+        $signToHash = '{"sessionId":"' . $sessionId . '",' . 
+        '"merchantId":' . $this->username . ',' .
+        '"amount":' . $amount . ',' .
+        '"currency":"' . $currency . '",' .
+        '"crc":"' . $this->crc . '"}';
+
+        echo $signToHash;
         return hash('sha384', $signToHash);
     }
 
