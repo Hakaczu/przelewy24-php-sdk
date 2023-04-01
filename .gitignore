@@ -2,5 +2,6 @@ vendor
 composer.lock
 przelewy24.php
 config
-tests
+tests/.env
+tests/env.php
 init.php
