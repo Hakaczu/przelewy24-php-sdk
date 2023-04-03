@@ -10,8 +10,6 @@ class TransactionRegister extends Auth {
         '"amount":' . $amount . ',' .
         '"currency":"' . $currency . '",' .
         '"crc":"' . $this->crc . '"}';
-
-        echo $signToHash;
         return hash('sha384', $signToHash);
     }
 
