@@ -4,7 +4,7 @@ class TransactionRegister extends Auth {
     public $data = null;
     public $crc;
 
-    private function generateSign($sessionId, $amount, $currency){
+    protected function generateSign($sessionId, $amount, $currency){
         $signToHash = '{"sessionId":"' . $sessionId . '",' . 
         '"merchantId":' . $this->username . ',' .
         '"amount":' . $amount . ',' .
