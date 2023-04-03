@@ -20,7 +20,7 @@ class Auth {
         $this->request = curl_init();
     }
 
-    private function prepareRequest() {
+    protected function prepareRequest() {
         curl_setopt($this->request, CURLOPT_URL, $this->url);
         curl_setopt($this->request, CURLOPT_HTTPHEADER, $this->headers);
         curl_setopt($this->request, CURLOPT_HEADER, 0);
