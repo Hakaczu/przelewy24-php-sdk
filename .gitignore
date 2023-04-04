@@ -5,3 +5,4 @@ config/configDev.php
 config/configProd.php
 config/.env
 initPHP5.php
+.DS_Store
