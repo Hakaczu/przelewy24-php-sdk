@@ -5,4 +5,5 @@ config/configDev.php
 config/configProd.php
 config/.env
 initPHP5.php
+payment-methods.json
 .DS_Store
