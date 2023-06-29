@@ -13,7 +13,7 @@ class TransactionRegister extends Auth {
         return hash('sha384', $signToHash);
     }
 
-    public function addTransactionData(Transaction $transaction, $crc, $urlReturn) {
+    public function addTransactionData(Transaction $transaction, $crc, $urlReturn, $urlStatus) {
         $this->crc = $crc;
         $rawData = [
             "merchantId" => intval($transaction->merchantId),
@@ -26,6 +26,7 @@ class TransactionRegister extends Auth {
             "country" => $transaction->country,
             "language" => $transaction->language,
             "urlReturn" => $urlReturn,
+            "urlStatus" => $urlStatus,
             "sign" => $this->generateSign(
             $transaction->sessionId, 
             $transaction->amount, 
