@@ -25,7 +25,7 @@ class TransactionRegister extends Auth {
             "email" => $transaction->email,
             "country" => $transaction->country,
             "language" => $transaction->language,
-            "channel" => $transaction->chanel,
+            "channel" => $transaction->channel,
             "urlReturn" => $urlReturn,
             "urlStatus" => $urlStatus,
             "sign" => $this->generateSign(
