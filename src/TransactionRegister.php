@@ -25,6 +25,7 @@ class TransactionRegister extends Auth {
             "email" => $transaction->email,
             "country" => $transaction->country,
             "language" => $transaction->language,
+            "channel" => $transaction->chanel,
             "urlReturn" => $urlReturn,
             "urlStatus" => $urlStatus,
             "sign" => $this->generateSign(
@@ -33,7 +34,6 @@ class TransactionRegister extends Auth {
             $transaction->currency
             )
         ];
-
         $this->data = json_encode($rawData);
     }
 

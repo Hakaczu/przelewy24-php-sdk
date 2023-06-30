@@ -10,6 +10,7 @@ class Transaction {
     public $email = null;
     public $country = 'PL';
     public $language = 'pl';
+    public $chanel = null;
 
     public function __construct($merchantId, $posId, $sessionId) {
         $this->merchantId = $merchantId;
